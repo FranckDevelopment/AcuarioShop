@@ -1,12 +1,14 @@
 <?php
-    include 'global/config.php';
-    include 'global/conexion.php';
-    //<!-- header -->
-    include 'templates/header.php';
+    require 'templates/header.php';
+    require "Classes/Metodos_Productos.php";
+    //Creamos una instancia de la  clase devuelve productos
+
+     $productos = new DevuelveProductos();
+
+     $array_productos=$productos->get_productos();
 
 ?>
 <!-- Section-->
-
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -36,13 +38,8 @@
     <section class="py-5">
         <div class="container px-12 px-lg-5 mt-5">
             <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                <?php
-                $sentencia=$pdo->prepare("SELECT * FROM Productos");
-                $sentencia->execute();
-                $lista = $sentencia->fetchAll(PDO::FETCH_ASSOC);
-                ?>
                 <?php 
-                foreach($lista as $item){?>
+                foreach($array_productos as $item) {?>
                 <div class="col mb-5">
                     <div class="card h-100">
                         <!-- Product image-->
@@ -50,7 +47,7 @@
                         <img 
                         class="card-img-top" 
                         src="assets/img/<?php echo $item['URL_Foto']?>" 
-                        data-bs-toggle="popover" 
+                            data-bs-toggle="popover" 
                         title="<?php echo $item['Nombre']?>" 
                         data-bs-trigger="hover"
                         data-bs-content="<?php echo $item['Descripcion']?>"

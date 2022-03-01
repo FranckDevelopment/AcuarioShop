@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <title>Acuario - Shop </title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-        <link rel="icon" type="image/x-icon" href="assets/img/logo_black.png" />
-        <link href="css/styles2.css" rel="stylesheet" />
+        <link rel="icon" type="image/x-icon" href="../assets/img/logo_white.png" />
+        <link href="../css/styles2.css" rel="stylesheet" />
     </head>
     <body>
         <video class="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src="assets/mp4/bg.mp4" type="video/mp4" /></video>
@@ -26,7 +26,7 @@
                         </div>
                         <br>
                         <div class="row input-group-newsletter">
-                          <div><center><button class="btn btn-primary12" id="" type="submit"><a href="sign_up.php">Sign Up </a></button> <button class="btn btn-primary12" id="" type="submit"><a href="index.php">Sign In</a></button></center> </div>
+                          <div><center><button class="btn btn-primary12" id="" type="submit"><a href="../Private/sign_up.php">Sign Up </a></button> <button class="btn btn-primary12" id="" type="submit"><a href="index.php">Sign In</a></button></center> </div>
                         </div>
                         
                     </form>
