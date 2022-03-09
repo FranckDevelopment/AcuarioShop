@@ -1,5 +1,5 @@
 <?php   
-    require ('config.php');//accedemos a la información que hay dentro de config.php
+    require_once 'config.php';//accedemos a la información que hay dentro de config.php
 
     class Conexion{
 

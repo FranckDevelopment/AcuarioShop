@@ -1,50 +1,70 @@
-
-<!DOCTYPE html>
+<Doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <title>Acuario - Shop </title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-        <link rel="icon" type="image/x-icon" href="../assets/img/logo_black.png" />
-        <link href="../css/styles2.css" rel="stylesheet" />
-    </head>
-    <body>
-        <video class="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src="../assets/mp4/bg.mp4" type="video/mp4" /></video>
-        <div class="masthead">
-            <div class="masthead-content text-white">
-                <div class="container-fluid px-4 px-lg-0">
-                    <center><img src="../assets/img/logo_white.png" > </center> 
-                    <center><h1 class="fst-italic lh-1 mb-4">Refaccionaria Acuario</h1></center>
-                    <center><h2 class="fst-italic lh-1 mb-4">Registrate</h2></center>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-                    <p class="mb-5"></p>
-                    <form method="POST" action="../Temp/insertar_usu.php" >
-                        <br>
-                        <input type="txt" class="form-control" name="txtRFC" placeholder="Ingresa tu RFC" id="txtRFC">
-                        <br>
-                        <input type="txt" class="form-control" name="txtNom" placeholder="Ingresa tu nombre" id="txtNom">
-                        <br>
-                        <input type="txt" class="form-control" name="txtApe" placeholder="Ingresa tus apellidos" id="txtApe">
-                        <br>
-                        <input type="email" class="form-control" name="txtmail" placeholder="Ingresa tu Correo" id="txtmail">
-                        <br>
-                        <input type="password" class="form-control" name="txtpass" placeholder="Ingresa una contraseña" id="txtpass">
-                        <br>
-                        <input type="tel" class="form-control" name="numtel" placeholder="Ingresa un Telefono " id="numtel">
-                        <br>
-                       <center><input class="btn btn-warning " type="submit" value="Registrate"></center> 
-                    </form>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="icon" type="image/x-icon" href="../assets/img/logo_black.png" />
+    <!-- Style -->
+    <link rel="stylesheet" href="../css/login.css">
+
+    <title>Login AcuarioShop</title>
+  </head>
+  <body>
+  
+
+  <div class="d-md-flex half">
+    <div class="bg" style="background-image: url('../assets/img/login2.jpg');"></div>
+    <div class="contents">
+
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-12">
+            <div class="form-block mx-auto">
+              <div class="text-center mb-5">
+              <h4>Registrate en <strong>Acuario Shop</strong></h4>
+              <!-- <p class="mb-4">Lorem ipsum dolor sit amet elit. Sapiente sit aut eos consectetur adipisicing.</p> -->
+              </div>
+              <form method="POST" action="../Temp/insertar_usu.php" >
+                <div class="form-group last mb-3">
+                  <h6 for="password">Foto</h6>
+                  <input type="File"  name="Foto" id="Foto">
                 </div>
+                <div class="form-group first">
+                  <h6 for="username">RFC</h6>
+                  <input type="txt" class="form-control" name="txtRFC" placeholder="Ingresa tu RFC" required>
+                </div>
+                <div class="form-group last mb-3">
+                  <h6 for="password">Nombre</h6>
+                  <input type="txt" class="form-control" name="txtNom" placeholder="Ingresa tu nombre" required>
+                </div>
+                <div class="form-group first">
+                  <h6 for="username">Apellidos</h6>
+                  <input type="txt" class="form-control" name="txtApe" placeholder="Ingresa tus apellidos" >
+                </div>
+                <div class="form-group first">
+                  <h6 for="username">Email</h6>
+                  <input type="email" class="form-control" name="txtmail" placeholder="Ingresa tu Correo" required>
+                </div>
+                <div class="form-group last mb-3">
+                  <h6 for="password">Password</h6>
+                  <input type="password" class="form-control" name="txtpass" placeholder="Ingresa una contraseña" required>
+                </div>
+                <div class="form-group last mb-3">
+                  <h6 for="password">Telefono</h6>
+                  <input type="tel" class="form-control" name="numtel" placeholder="Ingresa un Telefono " required>
+                </div>
+                <br>
+                <center><button type="submit" name="submit" class="btn btn-sm btn-block btn-primary">Registrar</button></center> 
+              </form>
             </div>
+          </div>
         </div>
-        <div class="social-icons">
-            <div class="d-flex flex-row flex-lg-column justify-content-center align-items-center h-100 mt-3 mt-lg-0">
-                <div class="contenedor-icono"><a class="btn btn-dark m-3" href="#!"><i class="bi bi-facebook"></i></a></div>
-                <div class="contenedor-icono"><a class="btn btn-dark m-3" href="#!"><i class="bi bi-whatsapp"></i></a></div>
-                <div class="contenedor-icono"><a class="btn btn-dark m-3" href="#!"><i class="bi bi-instagram"></i></a></div>
-            </div>
-        </div>
-        <script src="js/bootstrap.js"></script>
-    </body>
+      </div>
+    </div>
+  </div>
+  </body>
 </html>

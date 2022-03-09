@@ -1,6 +1,6 @@
 <?php 
     require_once "../Global/conexion.php";
-    require_once "../Classes/Metodos_Productos.php";
+    require_once "../Classes/Metodos_Usuarios.php";
 
     $rfc=$_POST['txtRFC'];
     $nom=$_POST['txtNom'];
@@ -21,8 +21,5 @@
     else{
         echo "fallo al insertar";
     }
-
-    echo $datos;
-    
 
 ?>

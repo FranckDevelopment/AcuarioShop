@@ -1,5 +1,5 @@
 <?php
-    require "Global/conexion.php";
+    require_once 'Global/conexion.php';
 
     class DevuelveProductos extends Conexion{
 

@@ -1,5 +1,5 @@
 <?php 
-    require "../Global/conexion.php";
+    require_once '../Global/conexion.php';
 
     class Metodos_USU extends Conexion{
 
@@ -20,5 +20,5 @@
             $resultado = $this->conexion_db->query("INSERT INTO Usuario(RFC,Nombre,Apellidos,Email,Password,Tel,Id_status) VALUES('$datos[0]','$datos[1]','$datos[2]','$datos[3]','$datos[4]','$datos[5]',2)");
             return $resultado;
         }
-        }
+    }
 ?>

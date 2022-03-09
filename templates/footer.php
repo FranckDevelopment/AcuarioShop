@@ -1,4 +1,4 @@
-<footer class="py-5 bg-dark" style="background-image: url('assets/img/fondo_home_page.jpg');background-size: cover;">
+<footer class="py-5 bg-dark" style="background-image: url('assets/img/login3.jpg');background-size: cover;">
             <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p></div>
         </footer>
         <!-- Bootstrap core JS-->
@@ -10,5 +10,11 @@
             var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
             var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
             return new bootstrap.Popover(popoverTriggerEl)
+            })
+        </script>
+        <script>
+            var offcanvasElementList = [].slice.call(document.querySelectorAll('.offcanvas'))
+            var offcanvasList = offcanvasElementList.map(function (offcanvasEl) {
+            return new bootstrap.Offcanvas(offcanvasEl)
             })
         </script>

@@ -22,7 +22,7 @@
             <header>
                 <div class="image-text">
                     <span class="image">
-                        <img src="assets/img/logo_white.png" alt="">
+                      <a href="index.php"> <img src="assets/img/logo_3.png" href="index.php"></a> 
                     </span>
                     <div class="text logo-text">
                         <span class="name">Shop - Acuario</span>
@@ -35,7 +35,7 @@
                 <div class="menu">
                     <li class="search-box">
                         <i class='bx bx-search icon'></i>
-                        <input type="text" placeholder="Search...">
+                        <input type="text" placeholder=" -> Search...">
                     </li>
                     <ul class="menu-links">
                         <li class="nav-link">
@@ -57,19 +57,19 @@
                             </a>
                         </li>
                         <li class="nav-link">
-                            <a href="#">
+                            <a href="categorias.php">
                                 <i class='bx bx-bell icon'></i>
                                 <span class="text nav-text">Categorias</span>
                             </a>
                         </li>
                         <li class="nav-link">
-                            <a href="#">
-                                <i class='bx bx-pie-chart-alt icon' ></i>
-                                <span class="text nav-text">Ofertas</span>
+                            <a href="shop.php">
+                                <i class='bx bx-grid-alt icon' ></i>
+                                <span class="text nav-text">Catalogo</span>
                             </a>
                         </li>
                         <li class="nav-link">
-                            <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#exampleModal">
+                            <a data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                                 <i class='bx bx-heart icon' ></i>
                                 <span class="text nav-text">Contactos</span>
                             </a>
@@ -97,7 +97,7 @@
             </div>
         </nav>
         <!-- Header-->
-        <header class="bg-dark py-5"  style="background-image: url('assets/img/fondo_home_page.jpg'); background-size:cover; ">
+        <header class="bg-dark py-5"  style="background-image: url('assets/img/fondo_home_page2.jpg'); background-size:cover; ">
             <div class="container px-4 px-lg-5 my-5">
                 <div class="text-center text-white">
                     <h1 class="display-4 fw-bolder">Acuario - Shop</h1>
