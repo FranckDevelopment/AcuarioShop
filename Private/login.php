@@ -43,11 +43,11 @@ include '../Temp/controlador_session.php';
               <form action="../Temp/controlador_session.php" method="post">
                 <div class="form-group first">
                   <h4 for="email">Email</h4>
-                  <input type="email" class="form-control" placeholder="your-email@gmail.com" name="email" id="email">
+                  <input type="email" class="form-control" placeholder="your-email@gmail.com" name="email" id="email" required>
                 </div>
                 <div class="form-group last mb-3">
                   <h4 for="password">Password</h4>
-                  <input type="password" class="form-control" placeholder="Your Password" name="password" id="password">
+                  <input type="password" class="form-control" placeholder="Your Password" name="password" id="password" required>
                 </div>
                 
                 <div class="d-sm-flex mb-5 align-items-center">
@@ -58,8 +58,10 @@ include '../Temp/controlador_session.php';
                   <span class="ml-auto"><a href="#" class="forgot-pass">Forgot Password</a></span> 
                 </div>
                 <button type="submit" name="submit" id="submit" class="btn btn-sm btn-block btn-primary">Sign in</button>
-
-                <button type="submit" name="submit" class="btn btn-sm btn-block btn-primary"><a href="../Private/sign_up.php">Sign up</a></button>
+                <br>
+                <a href="../Private/sign_up.php"> <input class="btn btn-sm btn-block btn-primary" value="Sign up"></a>
+                <br>
+                <input type="button" class="btn btn-sm btn-primary" value="<- Página anterior" onClick="history.go(-1);">
               </form>
             </div>
           </div>

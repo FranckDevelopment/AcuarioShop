@@ -1,4 +1,4 @@
-<?php require "templates/header.php" ?>
+<?php require "templates/header2.php" ?>
 
 
 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -39,15 +39,7 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-  <div class="offcanvas-header">
-    <h5 id="offcanvasRightLabel">Offcanvas right</h5>
-    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    ...
-  </div>
-</div>
+
 
 <?php require "templates/footer.php" ?>
 

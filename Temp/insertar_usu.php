@@ -8,9 +8,16 @@
     $mail=$_POST['txtmail'];
     $pass=$_POST['txtpass'];
     $tel=$_POST['numtel'];
+    $nombre=$_FILES['Foto']['name'];
+    $guardado=$_FILES['Foto']['tmp_name'];
     
+    $route = "../assets/img/IMG_Profile/".$nombre;
+	
+    move_uploaded_file($guardado,$route);
+    
+
     $datos=array(
-        $rfc,$nom,$ape,$mail,$pass,$tel
+        $rfc,$nombre,$nom,$ape,$mail,$pass,$tel
     );
 
     $obj=new Metodos_USU();

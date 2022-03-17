@@ -9,15 +9,15 @@
             parent::__construct();
         }
     
-        public function get_USU(){
-            $resultado = $this->conexion_db->query('SELECT * FROM Usuario');
+        public function get_USU($email){
+            $resultado = $this->conexion_db->query("SELECT * FROM Usuario WHERE Email='$email' ");
             //creamos un array asociativo que contendrá toda la información que estamos demandando de la mase de datos.
             $Usuarios = $resultado->fetch_all(MYSQLI_ASSOC);
             //pedimos que nos devuelva el array
             return $Usuarios;
         }
         public function insert_USU($datos){
-            $resultado = $this->conexion_db->query("INSERT INTO Usuario(RFC,Nombre,Apellidos,Email,Password,Tel,Id_status) VALUES('$datos[0]','$datos[1]','$datos[2]','$datos[3]','$datos[4]','$datos[5]',2)");
+            $resultado = $this->conexion_db->query("INSERT INTO Usuario(RFC,Foto,Nombre,Apellidos,Email,Password,Tel,Id_status) VALUES('$datos[0]','$datos[1]','$datos[2]','$datos[3]','$datos[4]','$datos[5]','$datos[6]',2)");
             return $resultado;
         }
     }

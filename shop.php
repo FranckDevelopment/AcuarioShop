@@ -1,5 +1,5 @@
 <?php
-    require 'templates/header.php';
+    require 'templates/header2.php';
     require 'Classes/Metodos_Productos.php';
     //Creamos una instancia de la  clase devuelve productos
 
@@ -9,32 +9,17 @@
 
 ?>
 <!-- Section-->
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">'Acuario-Shop'</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-        <div class="social-icons">
-                <div class="d-flex flex-row flex-lg-column justify-content-center align-items-center h-100 mt-3 mt-lg-0">
-                    <div class="contenedor-icono"><a class="btn btn-primary m-1" href="#!"><i class="bi bi-facebook" ></i> @Acuario-Shop</a></div>
-                    </br>
-                    <div class="contenedor-icono"><a class="btn btn-success m-1" href="#!"><i class="bi bi-whatsapp" ></i> Whatsapp-Acuario</a></div>
-                    </br>
-                    <div class="contenedor-icono"><a class="btn btn-danger m-1" href="#!"><i class="bi bi-instagram" ></i> @Acuario</a></div>
-                </div>
+<!-- Modal -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 id="offcanvasRightLabel">Offcanvas right 2</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-        </div>
-    </div>
-    </div>
+            <div class="offcanvas-body">
+                ...
+            </div>
+            </div>
+    
     <section class="py-5">
         <div class="container px-12 px-lg-5 mt-5">
             <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">

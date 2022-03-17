@@ -28,10 +28,10 @@
               <h4>Registrate en <strong>Acuario Shop</strong></h4>
               <!-- <p class="mb-4">Lorem ipsum dolor sit amet elit. Sapiente sit aut eos consectetur adipisicing.</p> -->
               </div>
-              <form method="POST" action="../Temp/insertar_usu.php" >
+              <form method="POST" action="../Temp/insertar_usu.php" enctype="multipart/form-data" >
                 <div class="form-group last mb-3">
                   <h6 for="password">Foto</h6>
-                  <input type="File"  name="Foto" id="Foto">
+                  <input type="File"  name="Foto">
                 </div>
                 <div class="form-group first">
                   <h6 for="username">RFC</h6>
@@ -59,6 +59,8 @@
                 </div>
                 <br>
                 <center><button type="submit" name="submit" class="btn btn-sm btn-block btn-primary">Registrar</button></center> 
+                <br>
+                <input type="button" class="btn btn-sm btn-primary" value="<- Página anterior" onClick="history.go(-1);">
               </form>
             </div>
           </div>

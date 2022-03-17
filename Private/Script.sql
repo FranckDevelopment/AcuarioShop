@@ -8,6 +8,7 @@ use acuarioshop;
 /********* CREACION DE TABLAS*******/
 CREATE TABLE Usuario(
     RFC VARCHAR(13) NOT NULL PRIMARY KEY,
+    Foto VARCHAR(900),
     Nombre VARCHAR(35) NOT NULL,
     Apellidos VARCHAR(70),
     Email VARCHAR(50) NOT NULL,

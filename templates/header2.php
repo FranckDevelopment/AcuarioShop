@@ -110,5 +110,21 @@
                 </div>
             </div>
         </header>
-    
-            
+        <!--offcanvas -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">estilo de redes</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+         redirecciones a redes sociales
+
+         <a href="https://www.facebook.com/AcuarioShop-101568069169297">
+                            <i class='bx bx-log-out icon' ></i>
+                            <span class="text nav-text">facebook</span>
+                        </a>
+
+
+        </div>
+        </div>
+           
